@@ -1,0 +1,35 @@
+VARIABLE DEPENDENCIES
+*********************
+Apple=(3*5)=> 15
+Variable 'Apple' depends on: No Dependencies.
+
+Banana=(2*(65.5+2.25))=> 135.5
+Variable 'Banana' depends on: No Dependencies.
+
+Blueberry=(Pear+0)=> 16
+Variable 'Blueberry' depends on: Pear
+
+Cherry=(Lemon/2)=> None
+Variable 'Cherry' depends on: Lemon
+
+Coconut=(1+0)=> 1
+Variable 'Coconut' depends on: No Dependencies.
+
+Durian=(Apple*Pear)=> 240
+Variable 'Durian' depends on: Pear, Apple
+
+Lemon=(Pear+Tangerine)=> None
+Variable 'Lemon' depends on: Pear
+
+Mango=((Apple+(Durian+(Pear*(Blueberry*(Coconut/Strawberry)))))/2)=> 135.5
+Variable 'Mango' depends on: Coconut, Blueberry, Apple, Durian, Pear, Strawberry
+
+Pear=(Apple+1)=> 16
+Variable 'Pear' depends on: Apple
+
+Starfruit=(2**4)=> 16
+Variable 'Starfruit' depends on: No Dependencies.
+
+Strawberry=(Pear*1)=> 16
+Variable 'Strawberry' depends on: Pear
+

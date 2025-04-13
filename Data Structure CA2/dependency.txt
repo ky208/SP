@@ -1,0 +1,14 @@
+VARIABLE DEPENDENCIES
+*********************
+a=(2+(3*2))=> 8
+Variable 'a' depends on: No Dependencies.
+
+b=(a+3)=> 11
+Variable 'b' depends on: a
+
+c=(30*3)=> 90
+Variable 'c' depends on: No Dependencies.
+
+d=(b+c)=> 101
+Variable 'd' depends on: b, c
+
