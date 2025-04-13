@@ -1,0 +1,85 @@
+<!-- Inherits from layout.html -->
+{% extends "layout.html" %}
+<!-- The block content replace the one encapsulated in layout.html -->
+{% block content %}
+<div class="row">
+    <div class="mt-3 p-5" style="border-radius:1rem;background-color:#BFD7ED">
+        <form name="frmPredict" action="/predict" method="post" novalidate>
+            <fieldset class="form-group">
+                <legend class='font-weight-bold'>Enter Ford Car Parameters</legend>
+                {{ form.hidden_tag() }}
+                <div class="row align-items-start">
+                    <div class="col-md-6">
+                <p>
+                    {{ form.model.label(class_='font-weight-bold') }}<br>
+                    {{ form.model(class_='form-control') }}
+                    {% for error in form.model.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                <div class="col-md-6">
+                <p>
+                    {{ form.year.label(class_='font-weight-bold') }}<br>
+                    {{ form.year(class_='form-control') }}
+                    {% for error in form.year.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                <div class="col-md-6">
+                <p>
+                    {{ form.transmission.label(class_='font-weight-bold') }}<br>
+                    {{ form.transmission(class_='form-control') }}
+                    {% for error in form.transmission.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                <div class="col-md-6">
+                <p>
+                    {{ form.mileage.label(class_='font-weight-bold') }}<br>
+                    {{ form.mileage(class_='form-control') }}
+                    {% for error in form.mileage.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                <div class="col-md-6">
+                <p>
+                    {{ form.tax.label(class_='font-weight-bold') }}<br>
+                    {{ form.tax(class_='form-control') }}
+                    {% for error in form.tax.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                <div class="col-md-6">
+
+                <p>
+                    {{ form.mpg.label(class_='font-weight-bold') }}<br>
+                    {{ form.mpg(class_='form-control') }}
+                    {% for error in form.mpg.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                <div class="col-md-6">
+
+                <p>
+                    {{ form.engineSize.label(class_='font-weight-bold') }}<br>
+                    {{ form.engineSize(class_='form-control') }}
+                    {% for error in form.engineSize.errors %}
+                    <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                </div>
+                </div>
+                <p>
+                    {{ form.submit(class_='form-control btn btn-primary w-100 shadow-lg mt-2 font-weight-bold') }}
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+{% endblock %}

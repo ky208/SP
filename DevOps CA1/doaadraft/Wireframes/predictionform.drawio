@@ -1,0 +1,113 @@
+<mxfile host="app.diagrams.net" modified="2023-12-03T10:00:32.504Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="SZD0MHOX4RtgO_GcuZeb" version="22.1.5" type="gitlab">
+  <diagram name="Page-1" id="03018318-947c-dd8e-b7a3-06fadd420f32">
+    <mxGraphModel dx="1363" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-1" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f5f5f5;fontFamily=Verdana;fontSize=12;align=center;comic=1;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="1040" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-2" value="Home" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="800" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-3" value="Login" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="890" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-4" value="Register" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="980" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Ford Car Prediction&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="50" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="980" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="370" as="sourcePoint" />
+            <mxPoint x="790" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-9" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Predict&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="150" y="610" width="810" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-11" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 24px;&quot;&gt;Predict Ford Car Parameters&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="140" y="210" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-14" value="Copyright ©2023. ⚉ Ford Car Prediction ⚉ All rights reserved." style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f5f5f5;fontFamily=Verdana;fontSize=12;align=center;comic=1;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry y="740" width="1100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-16" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Model&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="140" y="260" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-19" value="B-MAX" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#6C767D;fontColor=#ffffff;whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=0;fontSize=14;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="140" y="290" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-20" value="" style="shape=triangle;direction=south;fillColor=#ffffff;strokeColor=none;perimeter=none;" vertex="1" parent="k_12R9bm0MZcuQC7HfRC-19">
+          <mxGeometry x="1" y="0.5" width="10" height="5" relative="1" as="geometry">
+            <mxPoint x="-17" y="-2.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-26" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Year&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="550" y="260" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-29" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; Enter Year&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="290" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-30" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Transmission&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="140" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-31" value="Automatic" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#6C767D;fontColor=#ffffff;whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=0;fontSize=14;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="140" y="370" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-32" value="" style="shape=triangle;direction=south;fillColor=#ffffff;strokeColor=none;perimeter=none;" vertex="1" parent="k_12R9bm0MZcuQC7HfRC-31">
+          <mxGeometry x="1" y="0.5" width="10" height="5" relative="1" as="geometry">
+            <mxPoint x="-17" y="-2.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-33" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Mileage&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="550" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-34" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp;Enter Mileage&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="370" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="455" as="sourcePoint" />
+            <mxPoint x="380" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-36" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Tax&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="140" y="425" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-37" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp;Enter Tax&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="455" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="455" as="sourcePoint" />
+            <mxPoint x="790" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-45" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Miles Per Gallon&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="550" y="425" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-46" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp;Enter MPG&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="455" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="540" as="sourcePoint" />
+            <mxPoint x="380" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-48" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;Mileage&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="140" y="510" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k_12R9bm0MZcuQC7HfRC-49" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp;Enter Mileage&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="540" width="370" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

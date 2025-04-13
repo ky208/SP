@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2023-12-03T08:38:02.682Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="45QKOaLfX8fZugHFstzg" version="22.1.5" type="gitlab">
+  <diagram name="Page-1" id="03018318-947c-dd8e-b7a3-06fadd420f32">
+    <mxGraphModel dx="1122" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="677b7b8949515195-10" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f5f5f5;fontFamily=Verdana;fontSize=12;align=center;comic=1;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="30" y="40" width="1040" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-12" value="Home" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" parent="1" vertex="1">
+          <mxGeometry x="800" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-13" value="Login" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" parent="1" vertex="1">
+          <mxGeometry x="890" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-14" value="Register" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" parent="1" vertex="1">
+          <mxGeometry x="980" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Ford Car Prediction&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="50" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="230" y="180" width="640" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-3" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 36px;&quot;&gt;Sign In&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="480" y="210" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="370" as="sourcePoint" />
+            <mxPoint x="790" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-7" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Login&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="305" y="560" width="490" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-8" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; Enter Username&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="305" y="380" width="490" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-9" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 24px;&quot;&gt;Username&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="305" y="330" width="155" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-10" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 24px;&quot;&gt;Password&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="305" y="440" width="155" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-13" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; Enter Password&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="305" y="490" width="490" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjP1eCM5fwlkHOCAxRgU-14" value="Copyright ©2023. ⚉ Ford Car Prediction ⚉ All rights reserved." style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f5f5f5;fontFamily=Verdana;fontSize=12;align=center;comic=1;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry y="740" width="1100" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

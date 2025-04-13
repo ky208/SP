@@ -1,0 +1,52 @@
+<!-- Inherits from layout.html -->
+{% extends "layout.html" %}
+<!-- The block content replace the one encapsulated in layout.html -->
+{% block content %}
+<div class="row justify-content-center" style="border-radius:1rem;background-color:#BFD7ED">
+    {% if entries.all() %}
+ <div class="table-container" style="overflow-x: auto;">
+ <table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width:auto;">Model</th>
+            <th style="width:auto;">Year</th>
+            <th style="width:auto;">Transmission</th>
+            <th style="width:auto;">Mileage</th>
+            <th style="width:auto;">Tax</th>
+            <th style="width:auto;">Mpg</th>
+            <th style="width:auto;">Engine Size</th>
+            <th style="width:auto;">Prediction</th>
+            <th style="width:auto;">Timestamp</th>
+            <th style="width:auto;">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entry in entries %}
+        <tr>
+            <td>{{ entry.model}}</td>
+            <td>{{ entry.year }}</td>
+            <td>{{ entry.transmission}}</td>
+            <td>{{ entry.mileage }}</td>
+            <td>{{ entry.tax }}</td>
+            <td>{{ entry.mpg }}</td>
+            <td>{{ entry.engineSize }}</td>
+            <td>${{ entry.prediction}}</td>
+            <td>{{ entry.predicted_on.strftime("%d %b %y %H:%M")}}</td>
+            <td>
+                <form name="frmRemoveEntry" action="/remove" method="post" novalidate>
+                    <input type="hidden" name="id" value="{{entry.id}}">
+                    <input type="submit" class="form-control btn-danger" value="Remove">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+    {% else %}
+    <div class="alert">
+        <strong>No Predictions Available.</strong>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
