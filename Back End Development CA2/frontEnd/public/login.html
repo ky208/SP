@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/login.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+<div class="container">
+
+    <nav class="nav">
+        <a class="nav-link" href="/viewFilms">Search Films</a>
+    </nav>
+    
+
+	<div class="login-form">
+		<form action="">
+			<h2 class="text-center">Log in</h2>
+			<div class="form-group">
+				<input type="text" class="form-control" id="email" placeholder="Email" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="pwd" placeholder="Password" required="required">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block" id="Login">Log in as Staff</button>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block" id="LoginCust">Log in as Customer</button>
+			</div>
+			<div class="clearfix">
+				<label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+				<a href="#" class="pull-right">Forgot Password?</a>
+			</div>
+		</form>
+</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<script>
+
+
+	$(document).ready(function () {
+		$("#Login").click(function () {
+			var id = $('#email').val();
+			var pwd = $('#pwd').val();
+			var data = "{\"email\":\"" + id + "\", \"password\":\"" + pwd + "\"}";
+			console.log(data)
+			$.ajax({
+				url: 'http://localhost:3036/staff/login',
+				type: 'POST',
+				data: data,
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				success: function (data, textStatus, xhr) {
+					if (data != null) {
+						console.log(data)
+						var userJsonData = JSON.parse(data.UserData);
+						console.log(userJsonData)
+						// localStorage.setItem('token', userJsonData.token);
+						// localStorage.setItem('userInfo', userJsonData[0].staff_id);
+						localStorage.setItem('token', data.token);
+						localStorage.setItem('userInfo', userJsonData[0].staff_id);
+						localStorage.setItem('roleCheck', 'admin');
+						window.location.assign("http://localhost:3001/viewFilms");
+					} else {
+						console.log("Error");
+					}
+				},
+				error: function (xhr, textStatus, errorThrown) {
+					console.log('Error in Operation');
+					window.alert("Wrong Email or Password");
+				}
+			});
+			return false;
+		});
+	});  
+
+
+
+	$(document).ready(function () {
+		$("#LoginCust").click(function () {
+			var id = $('#email').val();
+			var pwd = $('#pwd').val();
+			var data = "{\"email\":\"" + id + "\", \"password\":\"" + pwd + "\"}";
+			console.log(data)
+			$.ajax({
+				url: 'http://localhost:3036/customer/login',
+				type: 'POST',
+				data: data,
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				success: function (data, textStatus, xhr) {
+					if (data != null) {
+						
+						console.log(data)
+						var userJsonData = JSON.parse(data.UserData);
+						// localStorage.setItem('token', userJsonData.token);
+						// localStorage.setItem('userInfo', userJsonData[0].customer_id);
+						localStorage.setItem('token', data.token);
+						localStorage.setItem('userInfo', userJsonData[0].customer_id);
+						localStorage.setItem('roleCheck', 'customer');
+						window.location.assign("http://localhost:3001/viewFilms");
+					} else {
+						console.log("Error");
+					}
+				},
+				error: function (xhr, textStatus, errorThrown) {
+					console.log('Error in Operation');
+					window.alert("Wrong Email or Password");
+				}
+			});
+			return false
+		});
+	});  
+</script>
+</html>

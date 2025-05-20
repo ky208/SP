@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <nav class="nav">
+        <a class="nav-link" href="/viewFilms">Search Films</a>
+        <script>
+    var roleCheck = localStorage.getItem("roleCheck")
+    console.log(roleCheck)
+
+    if(roleCheck == 'admin') {
+        document.write('<a class="nav-link" href="/addActor">Register Actor</a>')
+        document.write('<a class="nav-link" href="/addCustomer">Register Customer</a>')
+        document.write('<p><input type="button" id="Logout" value="Log Out" /></p>')
+    }
+    else if(roleCheck == 'customer') {
+        document.write('<a class="nav-link" href="/review">Leave a Review</a>')
+        document.write('<a class="nav-link" href="/cart">View Cart</a>')
+        document.write('<p><input type="button" id="Logout" value="Log Out" /></p>')
+    }
+        </script>
+    </nav>
+
+    
+    <div class="container my-5">
+        <div class="card">
+          <div class="card-header">
+            <h3>Receipt</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody id="test">
+                  </tbody>
+              </table>
+            </p>
+            <!-- <div id="total"></div>
+            <button type="submit" id="register" class="btn btn-primary">Confirm Check Out</button>
+          </div> -->
+          
+		                 <div id="total" class="card-footer text-muted">
+                                 <a href="#" id="register" class="btn btn-primary" class="View">Confirm Check Out</a>                                   
+                             </div>
+        </div>
+      </div>
+
+<div class="container">
+    <nav class="nav">
+        <script>
+    const roleCheck = localStorage.getItem("roleCheck")
+
+    if(roleCheck == 'admin') {
+        document.write('<a class="nav-link" href="/addActor">Register Actor</a>')
+        document.write('<a class="nav-link" href="/deleteActor">Delete Actor</a>')
+        document.write('<a class="nav-link" href="/addCustomer">Register Customer</a>')
+        document.write('<a class="nav-link" href="/review">Leave a Review</a>')
+        document.write('<p><input type="button" id="Logout" value="Log Out" /></p>')
+    }
+    else if(roleCheck == 'customer') {
+        document.write('<a class="nav-link" href="/review">Leave a Review</a>')
+        document.write('<p><input type="button" id="Logout" value="Log Out" /></p>')
+    }
+
+        </script>
+    </nav>
+    
+    
+<div class="container">
+
+    <div id="posts">
+
+        </div>
+        
+</div>  
+    </div>
+    </div>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+
+
+<script>
+        const token = localStorage.getItem("token");
+
+        const loggedInUserID = parseInt(localStorage.getItem("userInfo"));
+        var passBy = 0
+if(roleCheck == 'admin') {
+    passBy = 1
+}
+
+if(roleCheck == 'customer') {
+    passBy = 1
+}
+
+        if (token === null || isNaN(loggedInUserID)|| passBy != 1) {
+            window.location.href = "/login";
+        }
+
+
+$.ajax({
+	url: "http://localhost:3036/cartDetails/" + loggedInUserID,
+	type: "GET",
+	contentType: "application/json",
+	dataType: "json",
+	success: function (data, textStatus, xhr) {
+		console.log(data);
+		console.log(textStatus);
+		if (data != null) {
+            var postHtml = "";
+            var totalString = ''
+            var total = 0
+            for (var i = 0; i < data.postID.length; i++) {
+
+total += data.postID[i].amount
+console.log(total)
+postHtml += `
+<tr>
+                      <td>${data.postID[i].title}</td>
+                      <td>${data.postID[i].amount}</td>
+
+                    </tr>
+`;
+}
+total = total.toPrecision(4)
+totalString += `<h5 class="text-right">Total: ${total}</h5>`;
+$("#test").append(postHtml);
+$("#total").append(totalString);
+
+
+		} else {
+			console.log("Issue in retrieving...");
+		}
+
+
+	},
+	error: function (xhr, textStatus, err) {
+		console.log(err);
+
+	}
+}    );
+console.log()
+
+
+
+
+
+
+$("#Logout").click(function () {
+				window.localStorage.clear();
+				window.location.assign("http://localhost:3001/login");
+			});
+    
+        </script>
+</html>
