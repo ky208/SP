@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<style>
+    .table-bordered th, .table-bordered td {
+        border: 1px solid black !important;
+    }
+
+    .table-bordered {
+        border-collapse: collapse !important;
+    }
+</style>
+
+<div class="container mt-5" style="border-radius:1rem;background-color:#BFD7ED; padding:3rem">
+    <h2>Prediction History</h2>
+    <div class="filter-section mb-3">
+
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search Predictions" aria-label="Search Predictions">
+            <div class="input-group-append">
+                <button id="searchBtn" class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+        </div>
+
+        <select id="modelFilter" class="form-control mb-2">
+            <option value="all">All Models</option>
+            {% for model in unique_models %}
+            <option value="{{ model }}" {% if model_filter == model %}selected{% endif %}>{{ model }}</option>
+            {% endfor %}
+        </select>
+    
+        <select id="classFilter" class="form-control mb-2">
+            <option value="all">All Predicted Classes</option>
+            {% for cls in unique_classes %}
+            <option value="{{ cls }}" {% if class_filter == cls %}selected{% endif %}>{{ cls }}</option>
+            {% endfor %}
+        </select>
+    
+        <button id="filterBtn" class="btn btn-primary">Filter</button>
+    </div>
+
+    {% if predictions %}
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Model Used</th>
+                    <th>Image Name</th>
+                    <th>Predicted Class</th>
+                    <th>Confidence</th>
+                    <th>Date</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prediction in predictions %}
+                <tr>
+                    <td>{{ prediction.model_used }}</td>
+                    <td>{{ prediction.image_name }}</td>
+                    <td>{{ prediction.predicted_class }}</td>
+                    <td>{{ prediction.confidence | round(2) }}%</td>
+                    <td>{{ prediction.date }}</td>
+                    <td><a href="{{ url_for('delete_prediction', prediction_id=prediction.id) }}" class="btn btn-danger btn-sm">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    {% else %}
+        <p>No predictions made.</p>
+    {% endif %}
+</div>
+
+<script>
+document.getElementById('filterBtn').addEventListener('click', function() {
+    const model = document.getElementById('modelFilter').value;
+    const predictedClass = document.getElementById('classFilter').value;
+    window.location.href = `/predictionHistory?model=${model}&class=${predictedClass}`;
+});
+
+document.getElementById('searchBtn').addEventListener('click', function() {
+    const searchQuery = document.getElementById('searchInput').value;
+    window.location.href = `/predictionHistory?search=${encodeURIComponent(searchQuery)}`;
+});
+</script>
+{% endblock %}

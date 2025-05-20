@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="jumbotron text-center shadow-sm" style="border-radius:1rem;background-color:#BFD7ED">
+        <h1>Welcome to the Vegetable Prediction Web Application</h1>
+        <p class="lead">Leverage the power of AI to identify vegetables from images with high accuracy.</p>
+        <hr class="my-4">
+        <p>Simply upload an image of a vegetable, and let our advanced machine learning models do the rest.</p>
+        {% if current_user.is_authenticated %}
+            <a class="btn btn-success btn-lg" href="{{ url_for('prediction_history') }}" role="button">View Prediction History</a>
+        {% else %}
+            <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+            <a class="btn btn-info btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+        {% endif %}
+    </div>
+
+    <div class="text-center mb-5" style="border-radius:1rem;background-color:#BFD7ED">
+        <h2 style="border-radius:1rem;background-color:#BFD7ED;">Our Models</h2>
+        <p>Our models are trained on a diverse dataset of vegetable images, ensuring high accuracy and reliability in predictions.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4" style="border-radius:1rem">
+            <div class="card shadow">
+                <div class="card-body" style="background-color:#BFD7ED">
+                    <h3 class="card-title">Model1_Large</h3>
+                    <p class="card-text"><strong>Test Accuracy:</strong> 92.80%</p>
+                    <p class="card-text"><strong>Validation Accuracy:</strong> 92.80%</p>
+                    <p class="card-text">Trained with 128 by 128 images.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4" style="border-radius:1rem">
+            <div class="card shadow">
+                <div class="card-body" style="background-color:#BFD7ED">
+                    <h3 class="card-title">Model2_Small</h3>
+                    <p class="card-text"><strong>Test Accuracy:</strong> 95.57%</p>
+                    <p class="card-text"><strong>Validation Accuracy:</strong> 95.30%</p>
+                    <p class="card-text">Trained with 31 by 31 images.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center" style="border-radius:1rem;background-color:#BFD7ED">
+        <h2>Why Trust Our Models?</h2>
+        <p>Thanks to our sophisticated machine learning architectures, our models can accurately classify a wide range of vegetables, making them reliable tools for both educational and commercial applications. By continuously refining our models, we strive to maintain high standards of accuracy and user satisfaction.</p>
+    </div>
+</div>
+{% endblock %}

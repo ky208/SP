@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2024-02-11T10:25:35.491Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="7gDRsA3Q2LQG0qQWLOco" version="23.1.2" type="gitlab">
+  <diagram name="Page-1" id="03018318-947c-dd8e-b7a3-06fadd420f32">
+    <mxGraphModel dx="1772" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-1" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f5f5f5;fontFamily=Verdana;fontSize=12;align=center;comic=1;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="1040" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-2" value="Home" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="800" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-3" value="Login" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="890" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-4" value="Register" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="980" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-5" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Vegetable Image Prediction&lt;/span&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="50" y="55" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="70" y="110" width="960" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-7" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;Welcome to the Vegitable Prediction Web Application&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="350" as="sourcePoint" />
+            <mxPoint x="790" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-14" value="Copyright ©2023. ⚉ Vegetable Image Prediction ⚉ All rights reserved." style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f5f5f5;fontFamily=Verdana;fontSize=12;align=center;comic=1;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry y="740" width="1100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-19" value="&lt;font color=&quot;#ffffff&quot;&gt;Simply upload an image of a vegetable, and let our advanced machine learning models do the rest.&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-20" value="&lt;font color=&quot;#ffffff&quot;&gt;Leverage the power of AI to identify vegetables from images with high accuracy&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="265" y="155" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-21" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Login&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="390" y="215" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-22" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;Register&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="550" y="215" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="70" y="280" width="960" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-25" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;Our Models&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="480" y="290" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-26" value="&lt;font color=&quot;#ffffff&quot;&gt;Our models are trained on a diverse dataset of vegetable images, ensuring high accuracy and reliability in predictions.&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="170" y="330" width="680" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-27" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="70" y="390" width="450" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-28" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="540" y="390" width="450" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-29" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="70" y="570" width="960" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-31" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;Why trust our models?&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="450" y="580" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-32" value="&lt;font color=&quot;#ffffff&quot;&gt;Thanks to our sophisticated machine learning architectures, our models can accurately classify a wide range of vegetables, &lt;br&gt;making them reliable tools for both educational and commercial applications. By continuously refining our models, &lt;br&gt;we strive to maintain high standards of accuracy and user satisfaction.&lt;/font&gt;" style="text;html=1;points=[];align=center;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="95" y="615" width="940" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-34" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;Model1_Large&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="180" y="395" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-35" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;Model2_Small&lt;/font&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="680" y="395" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-36" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;Test Accuracy: 92.80%&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;Validation Accuracy: 92.80%&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;Trained with 128 by 128 images.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="165" y="435" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Bl28zFwEmdk2h7wHJkve-37" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;Test Accuracy: 95.57%&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;Validation Accuracy: 95.30%&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;Trained with 31 by 31 images.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" vertex="1" parent="1">
+          <mxGeometry x="660" y="435" width="260" height="95" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
